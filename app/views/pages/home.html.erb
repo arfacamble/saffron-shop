@@ -14,9 +14,11 @@
 </div>
 
 <!-- three product cards -->
-<div class="product-cards">
-  <% @products.each do |prod| %>
-    <%= render 'product_card', product: prod %>
-  <% end %>
+<div class="container">
+  <div class="product-cards-container">
+    <% @products.each do |prod| %>
+      <%= render 'shared/product_card', product: prod %>
+    <% end %>
+  </div>
 </div>
 <!-- insta embed once up and running -->
