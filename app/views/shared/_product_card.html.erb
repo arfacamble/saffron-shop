@@ -6,7 +6,7 @@
       <p><%= product.description %></p>
     </div>
     <div class="product-card-details">
-      <p>£<%= product.price %></p>
+      <p>£<%= product.price.round(2) %></p>
       <p><%= product.weight %>g</p>
       <%= link_to '#', class: "btn btn-outline-info" do %>
         <i class="fas fa-cart-plus"></i>
