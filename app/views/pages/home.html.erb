@@ -1,2 +1,22 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<!-- banner: image, 100vh, shop CTA (anchor scroll below) -->
+<div class="banner">
+  <div class="container banner-text">
+    <h1>Persian Saffron</h1>
+    <p class="banner-tagline">Buy the finest quality saffron</p>
+    <a href="#product-container" class="shop-link btn btn-info">Shop</a>
+  </div>
+</div>
+<!-- info text section -->
+<div class="container">
+  <p>Persian saffron is the best saffron, we have loads, buy our saffron</p>
+  <p>Saffron fact 1: Saffron will make you have superpowers</p>
+  <p>Saffron fact 2: Saffron is super expensive and luxurious, making it a great present</p>
+</div>
+
+<!-- three product cards -->
+<div class="product-cards">
+  <% @products.each do |prod| %>
+    <%= render 'product_card', product: prod %>
+  <% end %>
+</div>
+<!-- insta embed once up and running -->

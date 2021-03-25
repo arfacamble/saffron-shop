@@ -1,0 +1,15 @@
+.banner {
+  height: 100vh;
+  background-image: url('saffron_banner.jpeg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.banner-text {
+  color: $saffron-milk;
+  a {
+    text-decoration: none;
+  }
+}
